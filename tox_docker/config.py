@@ -158,6 +158,9 @@ class ContainerConfig:
         links: Optional[Collection[Link]] = None,
         volumes: Optional[Collection[Volume]] = None,
     ) -> None:
+        print('##########')
+        print(environment)
+        print('##########')
         self.name = name
         self.runas_name = runas_name(name)
         self.image = image
